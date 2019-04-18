@@ -1,7 +1,7 @@
 INC=-I../common-inc
 LIB=lib
 OBJ=obj
-CC=../tcc-orig-bin/tcc
+CC=tcc
 LIBC=../tcc-orig-bin/libc/string.a
 
 sulogin: strutils.o fixes

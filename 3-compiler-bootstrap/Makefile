@@ -1,4 +1,4 @@
-INC=-I../common-inc -Iinclude
+INC=-I../common-inc -Iinclude -Itcc-orig/include
 LIB=lib
 OBJ=obj
 CCORIG=./tcc-orig/tcc

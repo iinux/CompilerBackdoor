@@ -1,4 +1,4 @@
-INC=-I../common-inc -Iinclude
+INC=-I../common-inc -Iinclude -Itinycc/include
 LIB=lib
 OBJ=obj
 CC=./tinycc/tcc
@@ -15,7 +15,7 @@ fixes:
 	$(CC) -c $(LIB)/impure.c -o $(OBJ)/impure.o $(INC)
 
 tcc:
-	cd tinycc; ./configure --cc=../../tcc-orig-bin/tcc
+	cd tinycc; ./configure --cc=tcc
 	cd tinycc; make
 
 .PHONY: clean
